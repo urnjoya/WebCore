@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Telegram",
+    "description": "Real-time weather updates",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1163/1163661.png",
+    "version": "2",
+    "release_date": "2026-01-18",
+    "link": "/apps/weather"
+  },
+  {
+    "id": 2,
+    "title": "Instagram",
+    "description": "Real-time weather updates",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1163/1163661.png",
+    "version": "2",
+    "release_date": "2026-01-18",
+    "link": "/apps/weather"
+  }
+]
