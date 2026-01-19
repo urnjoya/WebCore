@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0A2540;
+    color: #0f172a;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+
+}
+
+header {
+    background-color: #0f172a;
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+#lg_name {
+    flex: 1;
+    text-align: left;
+}
+
+#searchbar {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    flex: 4;
+    margin-left: auto;
+
+}
+
+#searchInput {
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+#searchButton {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1E40AF;
+    color: white;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: #3B82F6;
+}
+
+main {
+    padding: 20px;
+}
+
+.app_card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    border-radius: 16px;
+}
+
+.app_name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.app_version,
+.release_date {
+    font-size: 14px;
+    color: #555555;
+}
+
+.install_button .pwa_install {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #10B981;
+    color: white;
+    cursor: pointer;
+}
+
+.install_button .pwa_install:hover {
+    background-color: #34D399;
+}
