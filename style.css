@@ -99,4 +99,20 @@ main {
 
 .install_button .pwa_install:hover {
     background-color: #34D399;
+
+}
+footer {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.v {
+    font-size: 14px;
+    color: #cccccc;
+
 }
