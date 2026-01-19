@@ -6,6 +6,7 @@
     "icon": "https://cdn-icons-png.flaticon.com/512/1163/1163661.png",
     "version": "2",
     "release_date": "2026-01-18",
+    "download_url": "https://www.wikipedia.org/",
     "link": "/apps/weather"
   },
   {
@@ -15,6 +16,7 @@
     "icon": "https://cdn-icons-png.flaticon.com/512/1163/1163661.png",
     "version": "2",
     "release_date": "2026-01-18",
+    "download_url": "https://www.wikipedia.org/",
     "link": "/apps/weather"
   }
 ]
