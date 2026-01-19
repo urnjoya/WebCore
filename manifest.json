@@ -7,9 +7,10 @@
   "theme_color": "#0f172a",
   "icons": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Play_Arrow_logo.svg",
+      "src": "https://cdn-icons-png.flaticon.com/512/888/888857.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ]
+
 }
