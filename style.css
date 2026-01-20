@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -116,3 +116,104 @@ footer {
     color: #cccccc;
 
 }
+ */
+/* =========================
+   RESPONSIVE DESIGN
+   Mobile First
+========================= */
+
+/* --------- Mobile (default) --------- */
+header {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#lg_name {
+    flex: 100%;
+    text-align: center;
+}
+
+#searchbar {
+    flex: 100%;
+    justify-content: center;
+}
+
+#searchInput {
+    width: 100%;
+}
+
+.app_card {
+    flex-direction: column;
+    text-align: center;
+}
+
+.install_button {
+    width: 100%;
+}
+
+.install_button .pwa_install {
+    width: 100%;
+}
+
+footer {
+    position: static;
+    margin-top: 20px;
+}
+
+
+/* --------- Tablet (≥ 768px) --------- */
+@media (min-width: 768px) {
+    header {
+        flex-wrap: nowrap;
+    }
+
+    #lg_name {
+        flex: 1;
+        text-align: left;
+    }
+
+    #searchbar {
+        flex: 2;
+        justify-content: flex-end;
+    }
+
+    #searchInput {
+        width: 250px;
+    }
+
+    .app_card {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .install_button {
+        margin-left: auto;
+    }
+
+    footer {
+        position: fixed;
+    }
+}
+
+
+/* --------- Desktop (≥ 1024px) --------- */
+@media (min-width: 1024px) {
+    main {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .app_card {
+        padding: 24px;
+        gap: 30px;
+    }
+
+    .app_name {
+        font-size: 22px;
+    }
+
+    #searchInput {
+        width: 300px;
+    }
+}
+
