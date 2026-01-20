@@ -8,5 +8,15 @@
     "release_date": "20 Jan 2026",
     "download_url": "https://urnjoya.github.io/GitHubExplore/",
     "link": "/apps/weather"
+  },
+    {
+    "id": 2,
+    "title": "WebCore",
+    "description": "A simple, PWA-ready web core for modular web apps.",
+    "icon": "https://cdn-icons-png.flaticon.com/512/888/888857.png",
+    "version": "1.0.3",
+    "release_date": "15 Jan 2026",
+    "download_url": "https://urnjoya.github.io/WebCore/",
+    "link": "/apps/weather"
   }
 ]
