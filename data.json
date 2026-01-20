@@ -3,20 +3,10 @@
     "id": 1,
     "title": "GitHub Explore",
     "description": "Frontend-only GitHub explorer for viewing public profiles and repositories in real time. PWA-ready and fully responsive.",
-    "icon": "https://cdn-icons-png.flaticon.com/512/1163/1163661.png",
-    "version": "2",
-    "release_date": "2026-01-18",
+    "icon": "https://urnjoya.github.io/GitHubExplore/reso/GitHub_Invertocat_Black.png",
+    "version": "1.0.3",
+    "release_date": "20 Jan 2026",
     "download_url": "https://urnjoya.github.io/GitHubExplore/",
-    "link": "/apps/weather"
-  },
-  {
-    "id": 2,
-    "title": "Instagram",
-    "description": "Real-time weather updates",
-    "icon": "https://cdn-icons-png.flaticon.com/512/1163/1163661.png",
-    "version": "2",
-    "release_date": "2026-01-18",
-    "download_url": "https://www.wikipedia.org/",
     "link": "/apps/weather"
   }
 ]
