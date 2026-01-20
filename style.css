@@ -1,4 +1,7 @@
-/* * {
+/* =========================
+   RESET & BASE
+========================= */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,45 +11,47 @@ body {
     background-color: #0A2540;
     color: #0f172a;
     font-family: Arial, sans-serif;
-    height: 100vh;
-
+    min-height: 100vh;
 }
 
+/* =========================
+   HEADER (MOBILE FIRST)
+========================= */
 header {
     background-color: #0f172a;
+    color: #ffffff;
     display: flex;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    font-size: 24px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+    font-size: 18px;
     font-weight: bold;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
 
 #lg_name {
-    flex: 1;
-    text-align: left;
+    flex: 100%;
+    text-align: center;
+    cursor: pointer;
 }
 
 #searchbar {
-    margin-left: auto;
+    flex: 100%;
     display: flex;
-    gap: 10px;
-    flex: 4;
-    margin-left: auto;
-
+    gap: 8px;
+    justify-content: center;
 }
 
 #searchInput {
-    width: 300px;
+    width: 100%;
+    max-width: 260px;
     padding: 8px;
     border: none;
     border-radius: 4px;
 }
 
 #searchButton {
-    padding: 8px 16px;
+    padding: 8px 14px;
     border: none;
     border-radius: 4px;
     background-color: #1E40AF;
@@ -58,27 +63,33 @@ header {
     background-color: #3B82F6;
 }
 
+/* =========================
+   MAIN CONTENT
+========================= */
 main {
-    padding: 20px;
+    padding: 16px;
 }
 
 .app_card {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 16px;
+    margin-bottom: 16px;
     display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
 }
 
 .logo img {
+    width: 90px;
+    height: 90px;
     border-radius: 16px;
 }
 
 .app_name {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -88,8 +99,13 @@ main {
     color: #555555;
 }
 
+.install_button {
+    width: 100%;
+}
+
 .install_button .pwa_install {
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px;
     border: none;
     border-radius: 4px;
     background-color: #10B981;
@@ -99,72 +115,32 @@ main {
 
 .install_button .pwa_install:hover {
     background-color: #34D399;
-
 }
+
+/* =========================
+   FOOTER (MOBILE)
+========================= */
 footer {
     background-color: #0f172a;
-    color: white;
+    color: #cccccc;
     text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.v {
-    font-size: 14px;
-    color: #cccccc;
-
-}
- */
-/* =========================
-   RESPONSIVE DESIGN
-   Mobile First
-========================= */
-
-/* --------- Mobile (default) --------- */
-header {
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-#lg_name {
-    flex: 100%;
-    text-align: center;
-}
-
-#searchbar {
-    flex: 100%;
-    justify-content: center;
-}
-
-#searchInput {
-    width: 100%;
-}
-
-.app_card {
-    flex-direction: column;
-    text-align: center;
-}
-
-.install_button {
-    width: 100%;
-}
-
-.install_button .pwa_install {
-    width: 100%;
-}
-
-footer {
-    position: static;
     margin-top: 20px;
 }
 
+#v {
+    font-size: 14px;
+}
 
-/* --------- Tablet (≥ 768px) --------- */
+/* =========================
+   TABLET (≥ 768px)
+========================= */
 @media (min-width: 768px) {
+
     header {
         flex-wrap: nowrap;
+        font-size: 20px;
+        align-items: center;
     }
 
     #lg_name {
@@ -178,42 +154,57 @@ footer {
     }
 
     #searchInput {
-        width: 250px;
+        max-width: 240px;
     }
 
     .app_card {
         flex-direction: row;
         text-align: left;
+        align-items: center;
+        gap: 20px;
     }
 
     .install_button {
+        width: auto;
         margin-left: auto;
+    }
+
+    .install_button .pwa_install {
+        width: auto;
+        padding: 10px 20px;
     }
 
     footer {
         position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 }
 
-
-/* --------- Desktop (≥ 1024px) --------- */
+/* =========================
+   DESKTOP / LAPTOP (≥ 1024px)
+========================= */
 @media (min-width: 1024px) {
+
+    header {
+        font-size: 22px;
+    }
+
     main {
         max-width: 1100px;
         margin: auto;
     }
 
     .app_card {
-        padding: 24px;
+        padding: 20px;
         gap: 30px;
     }
 
     .app_name {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     #searchInput {
-        width: 300px;
+        max-width: 300px;
     }
 }
-
